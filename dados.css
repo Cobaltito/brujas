@@ -1,0 +1,57 @@
+/* DADOS */
+.dice-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.dice-container .user-action {
+  text-transform: uppercase;
+  font: 12px "Inconsolata";
+  font-weight: 600;
+  text-align: center;
+  padding: 4px;
+  box-sizing: border-box;
+  background: var(--bckg4);
+  color: var(--txt2);
+  letter-spacing: 1px;
+}
+.dice-container .user-action strong {
+  font-weight: 900;
+}
+.dice-container .tirada {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 12px;
+  padding: 0px;
+  box-sizing: border-box;
+  background: var(--bckg4);
+}
+.dice-container .tirada .titulo-acierto\/fallo, .dice-container .tirada .titulo-suerte, .dice-container .tirada .titulo-defensa, .dice-container .tirada .titulo-ataque, .dice-container .tirada .titulo-ataque-de-monstruo, .dice-container .tirada .titulo-ataque-de-semidiós, .dice-container .tirada .titulo-divinidad, .dice-container .tirada .titulo-numérico, .dice-container .tirada .titulo-monstruo-beta, .dice-container .tirada .titulo-monstruo-gamma {
+  width: 100%;
+  text-transform: uppercase;
+  color: var(--acc1);
+  font-size: 20px;
+  font-weight: 800;
+  font-style: normal;
+  padding: 15px;
+  box-sizing: border-box;
+  background: var(--bckg2);
+  text-align: right;
+  margin: 12px 0px;
+}
+.dice-container .tirada span.titulo- {
+  display: none;
+}
+.dice-container .tirada .titulo-acierto\/fallo:after, .dice-container .tirada .titulo-suerte:after, .dice-container .tirada .titulo-defensa:after, .dice-container .tirada .titulo-ataque:after, .dice-container .tirada .titulo-divinidad:after, .dice-container .tirada .titulo-numérico:after, .dice-container .tirada .titulo-monstruo-beta:after, .dice-container .tirada .titulo-monstruo-gamma:after {
+  content: "\f522";
+  font: 16px 'Font Awesome 6 Free';
+  font-weight: 900;
+  margin-left: 10px;
+  color: var(--txt2);
+}
